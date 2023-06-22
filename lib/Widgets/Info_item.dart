@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class InfoItem extends StatelessWidget {
-  InfoItem(this.title, this.value);
+  const InfoItem(this.title, this.value, {Key? key}) : super(key: key);
 
   final String title;
   final String value;
@@ -12,7 +12,7 @@ class InfoItem extends StatelessWidget {
       children: [
         Text(
           value,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),

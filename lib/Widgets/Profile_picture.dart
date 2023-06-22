@@ -15,7 +15,7 @@ class ProfilePicture extends StatelessWidget {
           width: 120,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(60),
-            gradient: LinearGradient(
+            gradient: const LinearGradient(
               begin: Alignment.topCenter,
               end: AlignmentDirectional.bottomCenter,
               colors: [
@@ -29,7 +29,7 @@ class ProfilePicture extends StatelessWidget {
           height: 110,
           width: 110,
           decoration: BoxDecoration(
-              image: DecorationImage(
+              image: const DecorationImage(
                   image: NetworkImage("https://picsum.photos/200"),
                   fit: BoxFit.cover),
               border: Border.all(

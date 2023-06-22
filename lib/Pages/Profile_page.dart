@@ -1,11 +1,5 @@
-import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter/widgets.dart';
 import 'package:instagram_mockup/Widgets/Info_item.dart';
 import 'package:instagram_mockup/Widgets/Profile_picture.dart';
 import 'package:instagram_mockup/Widgets/Story_item.dart';
@@ -24,7 +18,7 @@ class ProfilePage extends StatelessWidget {
         centerTitle: false,
         title: Row(
           children: [
-            Text(
+            const Text(
               "almoirmo",
               style: TextStyle(
                 color: Colors.black,
@@ -33,7 +27,7 @@ class ProfilePage extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.arrow_drop_down),
+              icon: const Icon(Icons.arrow_drop_down),
               color: Colors.black,
             ),
           ],
@@ -41,20 +35,20 @@ class ProfilePage extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.add_box_outlined),
+            icon: const Icon(Icons.add_box_outlined),
             color: Colors.black,
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.menu),
+            icon: const Icon(Icons.menu),
             color: Colors.black,
           ),
         ],
       ),
       body: ListView(
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: Row(
               children: [
                 ProfilePicture(),
@@ -71,11 +65,11 @@ class ProfilePage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
               "almoirmo",
               style: TextStyle(
@@ -84,13 +78,13 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: RichText(
-              text: TextSpan(
+              text: const TextSpan(
                 text:
                     "The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. ",
                 style: TextStyle(color: Colors.black),
@@ -103,34 +97,34 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
               "Link Goes Here",
               style: TextStyle(color: Colors.blue),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: OutlinedButton(
               onPressed: () {},
-              child: Text(
+              child: const Text(
                 "Edit Profile",
                 style: TextStyle(color: Colors.black),
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -149,10 +143,10 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               TabItem(
@@ -167,9 +161,9 @@ class ProfilePage extends StatelessWidget {
           ),
           GridView.builder(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: 999,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               mainAxisSpacing: 3,
               crossAxisSpacing: 3,
@@ -186,7 +180,7 @@ class ProfilePage extends StatelessWidget {
         unselectedItemColor: Colors.grey,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,

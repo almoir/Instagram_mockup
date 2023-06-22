@@ -31,7 +31,7 @@ class StoryItem extends StatelessWidget {
                     color: Colors.white,
                     width: 5,
                   ),
-                  image: DecorationImage(
+                  image: const DecorationImage(
                       image: NetworkImage(
                         "https://picsum.photos/200",
                       ),
@@ -40,7 +40,7 @@ class StoryItem extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Text(title),
